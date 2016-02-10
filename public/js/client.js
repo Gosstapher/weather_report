@@ -47,7 +47,7 @@ window.onload = function(){
 
     currentCity.get(function(){
       var data = currentCity.data;
-      var cityDisplay = "<h3> In " + data.name + "</h3><h4> the forecast is : " + data.weather[0].main + "</h4><button id='addCity'>Add to list</button>";
+      var cityDisplay = "<h3> In " + data.name + "</h3><h4> the forecast is : " + data.weather[0].main + "</h4><img src=' http://openweathermap.org/img/w/" + data.weather[0].icon + ".png'>";
       cityView.innerHTML = cityDisplay;
 
       document.querySelector('#addCity').onclick = function(){
